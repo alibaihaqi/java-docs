@@ -1,0 +1,25 @@
+{
+  "name": "java-docs",
+  "version": "1.0.0",
+  "description": "Java Documentation",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibaihaqi/java-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alibaihaqi/java-docs/issues"
+  },
+  "homepage": "https://github.com/alibaihaqi/java-docs#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.10"
+  }
+}
