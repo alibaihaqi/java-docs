@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "JavaScript Documentation"
-  tagline: Develop your JavaScript project
+  name: "Java Documentation"
+  tagline: Develop your Java project
   actions:
     - theme: brand
       text: Introduction
