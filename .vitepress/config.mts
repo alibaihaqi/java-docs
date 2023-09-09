@@ -50,6 +50,13 @@ export default defineConfig({
           { text: 'Getting Started', link: '/introduction/getting-started' }
         ]
       },
+      {
+        text: 'Spring Boot',
+        items: [
+          { text: 'Getting Started', link: '/spring-boot/' },
+          // { text: 'Getting Started', link: '/spring-boot/getting-started' }
+        ]
+      },
     ],
 
     socialLinks: [
