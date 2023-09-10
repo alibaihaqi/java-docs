@@ -14,19 +14,27 @@ Udemy Course: [Learn Spring Boot 3 in 100 Steps - No 1 Java Framework](https://w
 - Setting up Spring Projects **before Spring Boot was NOT easy!**
 :::
 
+[Generate Your Project](https://start.spring.io/)
+
+::: tip
+**SNAPSHOT** version are version under development.
+:::
+
 ---
 
+Before the Spring Boot launched, several obstacles that you might find during your develoment:
+
 1. Dependency Management (**pom.xml**)
-  - Manage frameworks and versions
-    - **REST API** - Spring frameworks, Spring MVC framework, etc.
-    - **Unit Test** - Spring Test, Mockito, JUnit, etc.
+    - Manage frameworks and versions
+      - **REST API** - Spring frameworks, Spring MVC framework, etc.
+      - **Unit Test** - Spring Test, Mockito, JUnit, etc.
 2. Define Web App Configuration(**web.xml**)
-  - example: Configure **DispatcherServlet** for Spring MVC
+    - example: Configure **DispatcherServlet** for Spring MVC
 3. Spring Configuration (**context.xml**)
-  - Define **Spring Configuration**
-    - Component Scan
-    - View Resolver
+    - Define **Spring Configuration**
+      - Component Scan
+      - View Resolver
 4. NFRs (Non-Functional Requirements)
-  - Logging
-  - Error Handling
-  - Monitoring
+    - Logging
+    - Error Handling
+    - Monitoring
