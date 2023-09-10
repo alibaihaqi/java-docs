@@ -54,7 +54,7 @@ export default defineConfig({
         text: 'Spring Boot',
         items: [
           { text: 'Getting Started', link: '/spring-boot/' },
-          // { text: 'Getting Started', link: '/spring-boot/getting-started' }
+          { text: 'First REST API with Spring Boot', link: '/spring-boot/first-rest-api' }
         ]
       },
     ],
