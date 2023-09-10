@@ -12,11 +12,8 @@ We'll create first **GET API** on this project, with requirements:
 - path **"/common"**,
 - the response contains 2(two) properties, **success** and **message**
 
-1. Before we jump into generate path, we might need to create 2 classes,
-    - CommonController (for the path)
-    - Common
-
-- CommonController.java
+1. Before we jump into generate path, we might need to create 2 classes (you can see the sample code below),
+- src/main/com/alibaihaqi/springboot/springapp/CommonController.java
 ```java [CommonController.java]
 package com.alibaihaqi.springboot.springapp;
 
@@ -36,7 +33,7 @@ public class CommonController {
 }
 ```
 
-- Common.java
+- src/main/com/alibaihaqi/springboot/springapp/Common.java
 ```java [Common.java]
 package com.alibaihaqi.springboot.springapp;
 
@@ -67,3 +64,16 @@ public class Common {
     }
 }
 ```
+
+2. You can use the helper to generate **constructor**, **getter**, **setter**, **toString**, etc.
+3. Setting your runner configuration
+
+![Run Configuration](/assets/springboot/run-configuration.png)
+
+4. Run your application! (by clicking the play button)
+5. Test your response through `http://localhost:<port>/common`
+
+![Sample API Response](/assets/springboot/sample-api-response.png)
+
+---
+**CONGRATULATIONS FOR YOUR FIRST API!**
