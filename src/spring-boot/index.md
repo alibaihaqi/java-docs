@@ -78,6 +78,10 @@ logging.level.org.springframework=debug
 </dependencies>
 ```
 
-- For IntelliJ IDEA, you need to checked the `compiler` to build project automatically.
+- For IntelliJ IDEA, you need to checked the `Build Project Automatically` in `IntelliJ IDEA -> Setting -> Build, Execution, Deployment -> Compiler`.
 
 ![Enable Autobuild in IntelliJ](/assets/springboot/enable-autobuild-intellij.png)
+
+- For IntelliJ IDEA, you need to checked the `Allow auto-make to start even...` in `IntelliJ IDEA -> Setting -> Advanced Settings`
+
+![Enable Automake in Development](/assets/springboot/enable-automake-development.png)
