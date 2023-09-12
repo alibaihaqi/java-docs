@@ -38,3 +38,42 @@ Before the Spring Boot launched, several obstacles that you might find during yo
     - Logging
     - Error Handling
     - Monitoring
+
+## Spring Boot Starter Projects
+- **Web Application & REST API** - Spring Boot Starter Web (spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json)
+- **Unit Test** - Spring Boot Starter Test
+- **Talk to database using JPA** - Spring Boot Starter Data JPA
+- **Talk to database using JDBC** - Spring Boot Starter JDBC
+- **Secure web application or REST API** - Spring Boot Starter Security
+
+## Debug
+
+- To enable debug in Spring Boot, you can add value on `application.properties` - **src/main/resources/application.properties**
+
+```properties
+logging.level.org.springframework=debug
+```
+
+## Devtools
+
+- Add **spring-boot-devtools** in pom.xml
+
+```xml [pom.xml]
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+
+    <dependency> // [!code ++]
+		<groupId>org.springframework.boot</groupId>  // [!code ++]
+		<artifactId>spring-boot-devtools</artifactId>  // [!code ++]
+	</dependency>  // [!code ++]
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+	</dependency>
+</dependencies>
+```
