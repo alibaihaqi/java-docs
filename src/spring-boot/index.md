@@ -85,3 +85,7 @@ logging.level.org.springframework=debug
 - For IntelliJ IDEA, you need to checked the `Allow auto-make to start even...` in `IntelliJ IDEA -> Setting -> Advanced Settings`
 
 ![Enable Automake in Development](/assets/springboot/enable-automake-development.png)
+
+### Advantage of using Spring Boot Dev Tools
+- Increase developer productivity
+- For `pom.xml` dependency changes, need to stop your server **manually**

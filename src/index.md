@@ -13,10 +13,10 @@ hero:
       text: Getting Started
       link: /introduction/getting-started
 
-# features:
-#   - title: Basic Knowledge
-#     details: Understand the basic
-#     link: /basic/
+features:
+  - title: Spring Boot
+    details: Build Java Application with Spring Boot
+    link: /spring-boot/
 #   - title: Nest JS
 #     details: Build your backend using Nest JS
 #     link: /nestjs/
