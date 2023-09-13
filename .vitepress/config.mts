@@ -22,9 +22,9 @@ export default defineConfig({
   title: 'Java Documentation',
   description: 'Java Documentation Collection',
 
-  // head: [
-  //   ['link', { rel: 'icon', href: '/java-docs/assets/favicon.ico' }]
-  // ],
+  head: [
+    ['link', { rel: 'icon', href: 'https://www.alibaihaqi.com/favicon.ico' }]
+  ],
 
   themeConfig: {
 
