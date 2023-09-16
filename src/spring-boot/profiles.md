@@ -29,6 +29,29 @@ spring.profiles.active=dev // or prod or other environments
 ```
 :::
 
+```java [nest app]
+package com.alibaihaqi.springboot.springapp;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@ConfigurationProperties(prefix = "nestapp-service")
+@Component
+public class NestAppConfiguration {
+    private String url;
+
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+}
+
+```
+
 ```java [NestAppConfigurationController]
 package com.alibaihaqi.springboot.springapp;
 
