@@ -17,7 +17,9 @@
 
 ::: code-group
 ```properties [application-dev.properties]
-logging.level.org.springframework=trace
+logging.level.org.springframework=info
+
+nestapp-service.url=http://localhost:8081
 ```
 
 ```properties [application-prod.properties]
@@ -71,7 +73,8 @@ public class NestAppConfigurationController {
      */
     @GetMapping("/nestapp-configuration") // Path Implementation
     public NestAppConfiguration nestappcConfigurationResponse() {
-        return new NestAppConfiguration();
+        return configuration;
     }
 }
+
 ```
