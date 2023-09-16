@@ -29,7 +29,7 @@ spring.profiles.active=dev // or prod or other environments
 ```
 :::
 
-```java [nest app]
+```java [NestAppConfiguration]
 package com.alibaihaqi.springboot.springapp;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
