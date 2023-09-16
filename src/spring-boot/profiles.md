@@ -28,3 +28,27 @@ logging.level.org.springframework=info
 spring.profiles.active=dev // or prod or other environments
 ```
 :::
+
+```java [NestAppConfigurationController]
+package com.alibaihaqi.springboot.springapp;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+//nestapp-service.url=
+@RestController
+public class NestAppConfigurationController {
+
+    @Autowired
+    private NestAppConfiguration configuration;
+
+    /**
+     * @return: NestAppConfiguration -> { url: string }
+     */
+    @GetMapping("/nestapp-configuration") // Path Implementation
+    public NestAppConfiguration nestappcConfigurationResponse() {
+        return new NestAppConfiguration();
+    }
+}
+```
