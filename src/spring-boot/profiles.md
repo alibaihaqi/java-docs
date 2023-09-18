@@ -78,3 +78,10 @@ public class NestAppConfigurationController {
 }
 
 ```
+
+## Maven Build (on IntelliJ IDEA CE)
+
+You can try to execute the Maven Build with these following steps:
+- Open the `Run/Debug Configurations`, and click `+` button
+- Select the `Maven` option
+- You'll see the display something like this
