@@ -98,3 +98,21 @@ You can try to execute the Maven Build with these following steps:
 
 - You can start your built `.jar` file by going to the directory first
 - Then, run the command `java -jar <jar_name_to_run>.jar`
+
+## Actuator
+
+To help you monitor your application in Production, you can use `Spring Boot Actuator`, by add the dependency through your `pom.xml` file
+
+```xml
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+
+    <dependency> // [!code ++]
+		<groupId>org.springframework.boot</groupId> // [!code ++]
+		<artifactId>spring-boot-starter-actuator</artifactId> // [!code ++]
+	</dependency> // [!code ++]
+</dependencies>
+```
