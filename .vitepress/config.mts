@@ -39,7 +39,7 @@ export default defineConfig({
     },
 
     footer: {
-      copyright: 'Copyright © 2023-Present Fadli Al Baihaqi'
+      copyright: 'Copyright © 2023 - Present by Fadli Al Baihaqi'
     },
 
     sidebar: [
@@ -54,14 +54,16 @@ export default defineConfig({
         text: 'Spring Boot',
         items: [
           { text: 'Getting Started', link: '/spring-boot/' },
-          { text: 'First REST API with Spring Boot', link: '/spring-boot/first-rest-api' },
-          { text: 'Profiles and Actuator', link: '/spring-boot/profiles-actuator' }
+          { text: 'First REST API', link: '/spring-boot/first-rest-api' },
+          { text: 'Profiles and Actuator', link: '/spring-boot/profiles-actuator' },
+          { text: 'MVC Application', link: '/spring-boot/mvc-app' }
         ]
       },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/alibaihaqi' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/alibaihaqi/' }
     ]
   }
 })
