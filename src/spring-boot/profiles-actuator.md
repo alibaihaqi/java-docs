@@ -23,10 +23,12 @@ nestapp-service.url=http://localhost:8081
 ```
 
 ```properties [application-prod.properties]
+server.port=8085 // custom port
 logging.level.org.springframework=info
 ```
 
 ```properties [application.properties]
+server.port=8081 // custom port
 spring.profiles.active=dev // or prod or other environments
 ```
 :::
