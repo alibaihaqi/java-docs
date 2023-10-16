@@ -36,6 +36,7 @@ public class CommonController {
 ## Generate simple HTML file
 You can use `StringBuffer` to generate the HTML but it really painful by append it `one-by-one`.
 
+::: details [With `StringBuffer`]
 ```java [CommonController.java]
 package com.alibaihaqi.springboot.mvcapp.common;
 
@@ -45,13 +46,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class CommonController {
-
-    @RequestMapping("common")
-    @ResponseBody
-    public String commonResponse() {
-        return "Hello!";
-    }
-
     @RequestMapping("common-html")
     @ResponseBody
     public String commonHtmlResponse() {
@@ -66,16 +60,9 @@ public class CommonController {
         sb.append("</html>");
         return sb.toString();
     }
-
-    // We remove @ResponseBody to indicate the Spring Boot
-    // that we want to serve other resources, such as JSP file
-    // commonJsp will refer as the view name
-    @RequestMapping("common-jsp")
-    public String commonJspResponse() {
-        return "commonJsp";
-    }
 }
 ```
+:::
 
 ## Use Apache Tomcat Embed
 
@@ -95,3 +82,41 @@ You can setup by install the dependency through `pom.xml`
 </dependencies>
 ```
 
+Add the `prefix` and `suffix` information as a relative path for asset locations
+```properties
+spring.mvc.view.prefix=/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp
+```
+
+Add your first JSP file, for example your file on this path `/src/main/resources/META-INF/resources/WEB-INF/jsp/commonJsp.jsp`
+```html
+<html>
+    <head>
+        <title>MVC App</title>
+    </head>
+    <body>
+        <p>My MVC App</p>
+    </body>
+</html>
+```
+
+Implement it on your Controller
+```java [CommonController.java]
+package com.alibaihaqi.springboot.mvcapp.common;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class CommonController {
+
+    // We remove @ResponseBody to indicate the Spring Boot
+    // that we want to serve other resources, such as JSP file
+    // commonJsp will refer as the view name
+    @RequestMapping("common-jsp")
+    public String commonJspResponse() {
+        return "commonJsp";
+    }
+}
+```
