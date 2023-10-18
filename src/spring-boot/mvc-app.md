@@ -120,3 +120,39 @@ public class CommonController {
     }
 }
 ```
+
+## Query Parameters
+In the browser, you can add query param in the end of the URL page. For example, `http://www.example.com/somepage?d=20231018` where `http://www.example.com/somepage` is the page you want to access, and `d=20231018` is the query param append to the URL.
+
+You need to specifically input in the controller of the page.
+::: code-group
+```java [Required Params]
+@Controller
+public class LoginController {
+
+    @RequestMapping("login")
+    // In this case, you want to explicitly tell the page that you require the page to add param `name` in the URL
+    // or you will give the response 400
+    public String loginPage (@RequestParam String name, ModelMap model) {
+        System.out.println("Request param is " + name);
+        // You want to inject the param to the HTML page
+        model.put("name", name);
+        return "loginJsp";
+    }
+}
+```
+```java [Optional Params]
+@Controller
+public class LoginController {
+
+    @RequestMapping("login")
+    // In this case, you will process some logic if query params appear in the URL
+    public String loginPage (@RequestParam(required=false) String name, ModelMap model) {
+        System.out.println("Request param is " + name);
+        // You want to inject the param to the HTML page (if available)
+        model.put("name", name);
+        return "loginJsp";
+    }
+}
+```
+:::
