@@ -156,3 +156,7 @@ public class LoginController {
 }
 ```
 :::
+
+Here is the example when you put the required param in the code but the param is missing.
+
+![Param Missing](/assets/springboot/param-missing.png)
