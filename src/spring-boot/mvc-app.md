@@ -130,11 +130,17 @@ You need to specifically input in the controller of the page.
 @Controller
 public class LoginController {
 
+    // Use Logger instead of System.out.println or else in Production
+    // So, we can control from application.properties which level should be printed in the development
+    // and production
+    private Logger logger = LoggerFactory.getLogger(getClass());
+
     @RequestMapping("login")
     // In this case, you want to explicitly tell the page that you require the page to add param `name` in the URL
     // or you will give the response 400
     public String loginPage (@RequestParam String name, ModelMap model) {
-        System.out.println("Request param is " + name);
+        System.out.println("Request param is " + name); // NOT RECOMMENDED FOR PRODUCTION
+        logger.debug("Request param is {}", name);
         // You want to inject the param to the HTML page
         model.put("name", name);
         return "loginJsp";
@@ -145,10 +151,16 @@ public class LoginController {
 @Controller
 public class LoginController {
 
+    // Use Logger instead of System.out.println or else in Production
+    // So, we can control from application.properties which level should be printed in the development
+    // and production
+    private Logger logger = LoggerFactory.getLogger(getClass());
+
     @RequestMapping("login")
     // In this case, you will process some logic if query params appear in the URL
     public String loginPage (@RequestParam(required=false) String name, ModelMap model) {
-        System.out.println("Request param is " + name);
+        System.out.println("Request param is " + name); // NOT RECOMMENDED FOR PRODUCTION
+        logger.debug("Request param is {}", name);
         // You want to inject the param to the HTML page (if available)
         model.put("name", name);
         return "loginJsp";
@@ -160,3 +172,5 @@ public class LoginController {
 Here is the example when you put the required param in the code but the param is missing.
 
 ![Param Missing](/assets/springboot/param-missing.png)
+
+For logging, `Spring Boot Starter Web` is already included logging dependency called `spring-boot-starter-logging` with default `Logback with SLF4j`
