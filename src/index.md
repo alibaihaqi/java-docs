@@ -7,24 +7,19 @@ hero:
   tagline: Part of the Learning Docs hub.
   actions:
     - theme: brand
+      text: Start Beginner
+      link: /beginner/
+    - theme: alt
       text: Introduction
       link: /introduction/
-    - theme: alt
-      text: Getting Started
-      link: /introduction/getting-started
     - theme: alt
       text: Hub
       link: https://alibaihaqi.github.io/learning-docs/
 
 features:
-  - title: Spring Boot
-    details: Build Java Application with Spring Boot
-    link: /spring-boot/
-#   - title: Nest JS
-#     details: Build your backend using Nest JS
-#     link: /nestjs/
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Beginner
+    details: Install the JDK, learn the minimum Java, ship one Spring REST endpoint.
+    link: /beginner/
 ---
 
 <style>
