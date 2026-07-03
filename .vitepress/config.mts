@@ -69,6 +69,20 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Intermediate',
+        collapsed: false,
+        items: [
+          { text: 'Overview', link: '/intermediate/' },
+          { text: '01 Why a database', link: '/intermediate/01-why-a-database' },
+          { text: '02 Add JPA and H2', link: '/intermediate/02-add-jpa-h2' },
+          { text: '03 Entity and repository', link: '/intermediate/03-entity-repository' },
+          { text: '04 Service layer', link: '/intermediate/04-service-layer' },
+          { text: '05 Controller CRUD', link: '/intermediate/05-controller-crud' },
+          { text: '06 Validation and errors', link: '/intermediate/06-validation-errors' },
+          { text: '07 Tests', link: '/intermediate/07-tests' }
+        ]
+      },
+      {
         text: 'Spring Boot',
         collapsed: true,
         items: [
