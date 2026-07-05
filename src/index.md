@@ -23,6 +23,9 @@ features:
   - title: Intermediate
     details: Extend GET /items into a full CRUD API backed by Spring Data JPA and H2, with validation and tests.
     link: /intermediate/
+  - title: Advanced
+    details: Production Spring Boot — PostgreSQL, Flyway, Spring Security JWT, Docker, Testcontainers, OpenAPI, Redis, Actuator, and CI/CD.
+    link: /advanced/
 ---
 
 <style>

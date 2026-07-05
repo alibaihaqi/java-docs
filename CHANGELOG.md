@@ -3,6 +3,11 @@
 All notable changes to the Java learning-docs site. Newest first.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
+## 2026-07-05 — Advanced tier
+
+### Added
+- **Advanced tier** (`src/advanced/`, 10 pages + index): production Spring Boot — PostgreSQL migration, Flyway versioned migrations, Spring Security JWT auth, profile-based config, Docker multistage build + docker-compose, Testcontainers integration tests, OpenAPI/Swagger docs, Redis caching, Actuator health checks, and GitHub Actions CI/CD. Wired into the sidebar, nav, and home feature card.
+
 ## 2026-07-04 — Intermediate tier + CI
 
 ### Added

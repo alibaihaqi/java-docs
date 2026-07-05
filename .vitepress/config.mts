@@ -32,6 +32,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Introduction', link: '/introduction/' },
+      { text: 'Advanced', link: '/advanced/' },
     ],
 
     search: {
@@ -80,6 +81,23 @@ export default defineConfig({
           { text: '05 Controller CRUD', link: '/intermediate/05-controller-crud' },
           { text: '06 Validation and errors', link: '/intermediate/06-validation-errors' },
           { text: '07 Tests', link: '/intermediate/07-tests' }
+        ]
+      },
+      {
+        text: 'Advanced',
+        collapsed: false,
+        items: [
+          { text: 'Overview', link: '/advanced/' },
+          { text: '01 Why PostgreSQL', link: '/advanced/01-why-postgresql' },
+          { text: '02 Flyway migrations', link: '/advanced/02-flyway-migrations' },
+          { text: '03 Spring Security JWT', link: '/advanced/03-spring-security-jwt' },
+          { text: '04 Profiles and configuration', link: '/advanced/04-profiles-config' },
+          { text: '05 Docker and docker-compose', link: '/advanced/05-docker-compose' },
+          { text: '06 Integration tests with Testcontainers', link: '/advanced/06-testcontainers' },
+          { text: '07 OpenAPI documentation', link: '/advanced/07-openapi-docs' },
+          { text: '08 Redis caching', link: '/advanced/08-redis-caching' },
+          { text: '09 Actuator and health', link: '/advanced/09-actuator-health' },
+          { text: '10 CI/CD with GitHub Actions', link: '/advanced/10-ci-cd-github-actions' },
         ]
       },
       {
